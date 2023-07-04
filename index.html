@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="game-start-block game-start">
+      TO START PLAYING <br />
+      PRESS <span>SPACE</span>
+      <div class="notation-text">
+        Before the start you can choose the <span>difficulty level</span>. the
+        default will be <span class="notation-span">medium</span>
+      </div>
+    </div>
+
+    <div class="left-side-blocks">
+      <div class="records-table">
+        <div class="score-block">
+          <div class="lives">score</div>
+          <div class="score-table">
+            <div class="life life-1"></div>
+            <div class="life life-2"></div>
+            <div class="life life-3"></div>
+          </div>
+          <div class="misses">lives</div>
+          <div class="lose-table">
+            <div class="lose lose-1"></div>
+            <div class="lose lose-2"></div>
+            <div class="lose lose-3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="hardness-form-wrapper">
+        <form action="" class="hardness-form">
+          <input
+            type="radio"
+            id="level-1"
+            name="level"
+            value="easy"
+            class="easy-level"
+            tabindex="-1"
+          />
+          <input
+            type="radio"
+            id="level-2"
+            name="level"
+            value="medium"
+            class="medium-level"
+            tabindex="-1"
+          />
+          <input
+            type="radio"
+            id="level-3"
+            name="level"
+            value="hight"
+            class="hight-level"
+            tabindex="-1"
+          />
+          <div class="form-text-block">
+            <div class="form-text easy-text">easy</div>
+            <div class="form-text medium-text">medium</div>
+            <div class="form-text hight-text">hard</div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="logo"></div>
+
+    <div class="arrows-block">
+      <div class="arrows"></div>
+      <div class="instruction">press <span>arrows</span> to use hammers</div>
+    </div>
+
+    <div class="game-over">
+      <a href="" class="closer-block"><div class="closer"></div></a>
+      <div class="victory-img"></div>
+      <div class="victory-text">YOU WIN!</div>
+    </div>
+
+    <div class="game-over-lose">
+      <div class="lose-img"></div>
+      Reload the game?
+      <a href="" class="yes-button">YES</a>
+    </div>
+
+    <div class="game-field">
+      <div class="hole-block" id="hole-block-1">
+        <div class="lid" id="lid-1"></div>
+        <div class="hole"></div>
+        <div class="front-bg"></div>
+        <div class="heads head head-pos head-vlad" id="head-id-1"></div>
+        <div class="heads head fake-head-pos fake-head" id="head-id-5"></div>
+        <div class="hamer hamer-right hamer-right-start" id="hamer-1"></div>
+      </div>
+      <div class="hole-block" id="hole-block-2">
+        <div class="lid" id="lid-2"></div>
+        <div class="hole"></div>
+        <div class="front-bg"></div>
+        <div class="heads head head-pos head-vlad" id="head-id-2"></div>
+        <div class="heads head fake-head-pos fake-head" id="head-id-6"></div>
+        <div class="hamer hamer-left hamer-left-start" id="hamer-2"></div>
+      </div>
+      <div class="hole-block" id="hole-block-3">
+        <div class="lid" id="lid-3"></div>
+        <div class="hole"></div>
+        <div class="front-bg"></div>
+        <div class="heads head head-pos head-vlad" id="head-id-3"></div>
+        <div class="heads head fake-head-pos fake-head" id="head-id-7"></div>
+        <div class="hamer hamer-right hamer-right-start" id="hamer-3"></div>
+      </div>
+      <div class="hole-block" id="hole-block-4">
+        <div class="lid" id="lid-4"></div>
+        <div class="hole"></div>
+        <div class="front-bg"></div>
+        <div class="heads head head-pos head-vlad" id="head-id-4"></div>
+        <div class="heads head fake-head-pos fake-head" id="head-id-8"></div>
+        <div class="hamer hamer-left hamer-left-start" id="hamer-4"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
